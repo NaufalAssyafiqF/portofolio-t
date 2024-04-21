@@ -21,7 +21,7 @@ hamburger.addEventListener("click", function () {
 });
 
 document.getElementById("downloadCv").addEventListener("click", function () {
-  var pdfURL = "assets/my-cv.pdf";
+  var pdfURL = "assets/my-cv-maret2024.pdf";
 
   var link = document.createElement("a");
   link.href = pdfURL;
@@ -56,19 +56,23 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].classList.add("hidden");
   }
