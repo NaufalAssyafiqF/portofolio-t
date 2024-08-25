@@ -21,7 +21,7 @@ hamburger.addEventListener("click", function () {
 });
 
 document.getElementById("downloadCv").addEventListener("click", function () {
-  var pdfURL = "assets/my-cv-maret2024.pdf";
+  var pdfURL = "assets/my-cv-agustus2024.pdf";
 
   var link = document.createElement("a");
   link.href = pdfURL;
