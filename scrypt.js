@@ -21,11 +21,11 @@ hamburger.addEventListener("click", function () {
 });
 
 document.getElementById("downloadCv").addEventListener("click", function () {
-  var pdfURL = "assets/my-cv-agustus2024.pdf";
+  var pdfURL = "assets/cv-desember24.pdf";
 
   var link = document.createElement("a");
   link.href = pdfURL;
-  link.download = "my-cv.pdf";
+  link.download = "CV-Naufal Assyafiq.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
